@@ -1,9 +1,9 @@
 {
-  "name": "04-react-query",
+  "name": "05-notehub-query",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://anna-bogriakova.github.io/04-react-query/",
+  "homepage": "https://anna-bogriakova.github.io/05-notehub-query/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
