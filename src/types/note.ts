@@ -1,9 +1,8 @@
-export interface Movie {
-  id: number;
-  poster_path: string;
-  backdrop_path: string;
+export interface Note {
+  id: string;
   title: string;
-  overview: string;
-  release_date: string;
-  vote_average: number;
+  content: string;
+  createdAt: string;
+  updatedAt: string;
+  tag: string;
 }
