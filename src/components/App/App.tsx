@@ -19,6 +19,10 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [debouncedSearch] = useDebounce(search, 500);
 
+  useEffect(() => {
+    setPage(1);
+  }, [debouncedSearch]);
+
   const { data, isLoading, isError } = useQuery<NotesResponse, Error>({
     queryKey: ["notes", page, debouncedSearch],
     queryFn: () => fetchNotes(debouncedSearch, page, perPage),
